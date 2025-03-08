@@ -1,0 +1,46 @@
+name: Aktualizacja README
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Workflow uruchamia się codziennie o północy
+    - cron: '0 16 * * 4'  # Workflow uruchamia się w czwartki o 16:00
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repozytorium
+        uses: actions/checkout@v3
+
+      - name: Ustaw treść README w zależności od święta
+        id: set_readme
+        run: |
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Run change_logo.py
+        run: |
+            python3 "Organize/src/additional_scripts/change_logo.py"
+
+      - name: Commit and push changes
+        env:
+          TOKEN_GITHUB: ${{ secrets.TOKEN_GITHUB }}
+        run: |
+          # Konfiguracja danych użytkownika dla Git
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Dodaj wszystkie zmodyfikowane pliki
+          git add README.md
+          if git diff --cached --quiet -- README.md; then
+              echo "Brak zmian w README"
+          else
+              git pull # na wypadek gdyby uzytknik cos dodal w miedzy czasie
+              git commit -m "Dodaje readme"
+              git push "https://x-access-token:${TOKEN_GITHUB}@github.com/${{ github.repository }}.git" HEAD:${{ github.ref }}
+          fi
+        shell: bash

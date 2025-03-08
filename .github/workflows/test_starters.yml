@@ -1,0 +1,81 @@
+name: Test theme starters
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'Organize/src/starters/*.pdf'
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'Organize/src/starters/*.pdf'
+  workflow_dispatch:
+
+jobs:
+  Init_all_themes:
+    runs-on: macos-latest
+
+    steps:
+      - name: clone repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+      
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run Organize.py  with all passwords
+        shell: bash
+        run: |
+          python Organize/Organize.py INIT <<EOF
+          ${{ secrets.PASSWORD_ENCRYPTED_I || '\n\n\n' }}
+          ${{ secrets.PASSWORD_ENCRYPTED_II || '\n\n\n' }}
+          ${{ secrets.PASSWORD_ENCRYPTED_III || '\n\n\n' }}
+          ${{ secrets.PASSWORD_ENCRYPTED_IV || '\n\n\n' }}
+          ${{ secrets.PASSWORD_ENCRYPTED_V || '\n\n\n' }}
+          ${{ secrets.PASSWORD_ENCRYPTED_VI || '\n\n\n' }}
+          ${{ secrets.PASSWORD_ENCRYPTED_VII || '\n\n\n' }}
+          EOF
+
+      - name: Test writing to themes
+        shell: bash
+        run: |
+          for file in Notebooks/*.pdf; do
+            echo "Przygotowuje zeszytu $file do symulacji uzywania"
+            mv "$file" Notebooks/input.pdf
+            python Organize/src/additional_scripts/simulate_writing.py
+
+            # Usuwam wszystkie Rozwiązania projektu
+            find ./Solutions -type f -path '*/resources/pdfs/source_raw.pdf' -exec rm -f {} \;
+
+            # Odpalam skrypt na zeszycie
+            python Organize/Organize.py raw
+
+            # Sprawdzenie dla zadań nieparzystych: rozwiązanie musi istnieć
+            find Solutions -type d -regex '.*[13579]$' | while read dir; do
+                if [ ! -f "$dir/resources/pdfs/source_raw.pdf" ]; then
+                    echo "Błąd: Plik source_raw.pdf nie znaleziony w folderze: $dir"
+                    exit 1  # Rzuca wyjątek (kończy skrypt z kodem błędu)
+                fi
+            done
+
+            # Sprawdzenie dla zadań parzystych: rozwiązanie nie powinno istnieć
+            find Solutions -type d -regex '.*[02468]$' | while read dir; do
+                if [ -f "$dir/resources/pdfs/source_raw.pdf" ]; then
+                    echo "Błąd: Plik source_raw.pdf nie powinien być obecny w folderze: $dir"
+                    exit 1  # Rzuca wyjątek (kończy skrypt z kodem błędu)
+                fi
+            done
+
+            echo "Zeszyt pomyslnie przeszedł kontrole"
+            rm -f Notebooks/input.pdf
+            rm -f Organize/output.pdf
+          done
+          echo "Pomyslnie sprawdzono dzialanie kazdego zeszytu!"

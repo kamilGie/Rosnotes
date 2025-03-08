@@ -1,0 +1,90 @@
+name: Create Release and README
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'Solutions/**'
+  workflow_dispatch:
+
+jobs:
+  generate-notebooks:
+    runs-on: macos-latest
+
+
+    steps:
+      - name: clone repo
+        uses: actions/checkout@v4
+      
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      
+      - name: Install dependencies
+        run: |
+         pip3.10 install -r requirements.txt
+      
+      - name: Run Organize.py  witf all passwords
+        run: |
+          # Jesli nie bedzie sekretu wpisuej 3 razy enter zeby pominąc haslo
+          python3.10 Organize/Organize.py INIT <<EOF
+          ${{ secrets.PASSWORD_ENCRYPTED_I || '\n\n\n' }}
+          ${{ secrets.PASSWORD_ENCRYPTED_II || '\n\n\n' }}
+          ${{ secrets.PASSWORD_ENCRYPTED_III || '\n\n\n' }}
+          ${{ secrets.PASSWORD_ENCRYPTED_IV || '\n\n\n' }}
+          ${{ secrets.PASSWORD_ENCRYPTED_V || '\n\n\n' }}
+          ${{ secrets.PASSWORD_ENCRYPTED_VI || '\n\n\n' }}
+          ${{ secrets.PASSWORD_ENCRYPTED_VII || '\n\n\n' }}
+          EOF
+
+      - name: Upload Notebooks
+        uses: actions/upload-artifact@v4
+        with:
+          name: pdf-assets
+          path: Notebooks/**/*.pdf
+          retention-days: 1
+
+      - name: Run add_readme.py
+        run: |
+            python3 "Organize/src/additional_scripts/add_readme.py"
+
+      - name: Commit and push changes
+        env:
+          TOKEN_GITHUB: ${{ secrets.TOKEN_GITHUB }}
+        run: |
+          # Konfiguracja danych użytkownika dla Git
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Dodaj wszystkie zmodyfikowane pliki
+          git add Solutions/.
+          if git diff --cached --quiet -- Solutions/; then
+              echo "Brak zmian w Solutions"
+          else
+              git pull # na wypadek gdyby uzytknik cos dodal w miedzy czasie
+              git commit -m "Dodaje readme"
+              git push "https://x-access-token:${TOKEN_GITHUB}@github.com/${{ github.repository }}.git" HEAD:${{ github.ref }}
+          fi
+        shell: bash
+
+
+  update-release:
+    needs: generate-notebooks
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download Notebooks
+        uses: actions/download-artifact@v4
+        with:
+          name: pdf-assets
+          path: release-pdfs
+
+      - name: update Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: Notebooks
+          update: true
+          files: release-pdfs/**/*.pdf
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN_GITHUB }}

@@ -1,0 +1,38 @@
+name: Sync with Template Repository
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  sync_template:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout current repository
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.TOKEN_GITHUB }}
+
+      - name: Clone template repository
+        run: |
+          git clone --depth 1 https://github.com/KamilGie/Rosnotes.git template-repo
+
+      - name: Synchronize files excluding specified ones
+        run: |
+          rsync -av --exclude-from='.github/workflows/exclude-list.txt' template-repo/ ./
+
+      - name: Remove template-repo folder
+        run: rm -rf template-repo
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin https://x-access-token:${{ secrets.TOKEN_GITHUB }}@github.com/${{ github.repository }}.git
+          git add .
+          git commit -m "Update from template repository" || echo "No changes to commit"
+          git push origin HEAD:main
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN_GITHUB }}
+
