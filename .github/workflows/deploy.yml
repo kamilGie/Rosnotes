@@ -79,6 +79,13 @@ jobs:
         with:
           name: pdf-assets
           path: release-pdfs
+      - name: Rename files before release
+        run: |
+          for file in release-pdfs/*.pdf; do
+            new_name=$(echo "$file" | sed -E 's/ (.*)-/-/')
+            [ "$file" != "$new_name" ] && mv "$file" "$new_name"
+          done
+
 
       - name: update Release
         uses: softprops/action-gh-release@v2
