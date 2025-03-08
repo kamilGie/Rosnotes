@@ -2,7 +2,7 @@
 
 Kliknij nazwę motywu, aby pobrać.
 
-### [White](../../../releases/download/Notebooks/Rosnotes.Matematyka.Dyskretna-White.pdf)
+### [White](../../../releases/download/Notebooks/Rosnotes-White.pdf)
 <div style="display: flex; justify-content: space-between; align-items: center;">
   <img src="../Organize/src/assets/White_name_0.png" alt="Name" style="width: 36%">
   <img src="../Organize/src/assets/White_tmpl_0.png" alt="Template" style="width: 31%">
@@ -11,14 +11,14 @@ Kliknij nazwę motywu, aby pobrać.
 
 
 
-### [Black](../../../releases/download/Notebooks/Rosnotes.Matematyka.Dyskretna-Black.pdf)
+### [Black](../../../releases/download/Notebooks/Rosnotes-Black.pdf)
 <div style="display: flex; justify-content: space-between; align-items: center;">
   <img src="../Organize/src/assets/Black_name_0.png" width="36%" height="auto" style="display: inline-block; margin: 0 1.5%; min-width: 250px;">
   <img src="../Organize/src/assets/Black_tmpl_0.png" width="31%" height="auto" style="display: inline-block; margin: 0 1.5%; min-width: 250px;">
   <img src="../Organize/src/assets/Black_sol_0.png" width="31%" height="auto" style="display: inline-block; margin: 0 1.5%; min-width: 250px;">
 </div>
 
-### [Tangled](../../../releases/download/Notebooks/Rosnotes.Matematyka.Dyskretna-Tangled.pdf)
+### [Tangled](../../../releases/download/Notebooks/Rosnotes-Tangled.pdf)
 <div style="display: flex; justify-content: space-between; align-items: center;">
   <img src="../Organize/src/assets/Tangled_name_0.png" width="36%" height="auto" style="display: inline-block; margin: 0 1.5%; min-width: 250px;">
   <img src="../Organize/src/assets/Tangled_tmpl_0.png" width="31%" height="auto" style="display: inline-block; margin: 0 1.5%; min-width: 250px;">
@@ -26,7 +26,7 @@ Kliknij nazwę motywu, aby pobrać.
 </div>
 
 
-### [Noxus](../../../releases/download/Notebooks/Rosnotes.Matematyka.Dyskretna-Noxus.pdf)
+### [Noxus](../../../releases/download/Notebooks/Rosnotes-Noxus.pdf)
 <div style="display: flex; justify-content: space-between; align-items: center;">
   <img src="../Organize/src/assets/Noxus_name_0.png" width="36%" height="auto" style="display: inline-block; margin: 0 1.5%; min-width: 250px;">
   <img src="../Organize/src/assets/Noxus_tmpl_0.png" width="31%" height="auto" style="display: inline-block; margin: 0 1.5%; min-width: 250px;">
@@ -37,13 +37,13 @@ Kliknij nazwę motywu, aby pobrać.
 ## Motywy Encrypted
 Hasła wymagane do odszyfrowania treści znajdują się w zeszytach publicznych (jeśli są wypełnione rozwiązaniami przez osobę, która zna hasła).
 
-- [Encrypted 1](../../../releases/download/Notebooks/Rosnotes.Matematyka.Dyskretna-Encrypted_I.pdf)
-- [Encrypted 2](../../../releases/download/Notebooks/Rosnotes.Matematyka.Dyskretna-Encrypted_II.pdf)
-- [Encrypted 3](../../../releases/download/Notebooks/Rosnotes.Matematyka.Dyskretna-Encrypted_III.pdf)
-- [Encrypted 4](../../../releases/download/Notebooks/Rosnotes.Matematyka.Dyskretna-Encrypted_IV.pdf)
-- [Encrypted 5](../../../releases/download/Notebooks/Rosnotes.Matematyka.Dyskretna-Encrypted_V.pdf)
-- [Encrypted 6](../../../releases/download/Notebooks/Rosnotes.Matematyka.Dyskretna-Encrypted_VI.pdf)
-- [Encrypted 7](../../../releases/download/Notebooks/Rosnotes.Matematyka.Dyskretna-Encrypted_VII.pdf)
+- [Encrypted 1](../../../releases/download/Notebooks/Rosnotes-Encrypted_I.pdf)
+- [Encrypted 2](../../../releases/download/Notebooks/Rosnotes-Encrypted_II.pdf)
+- [Encrypted 3](../../../releases/download/Notebooks/Rosnotes-Encrypted_III.pdf)
+- [Encrypted 4](../../../releases/download/Notebooks/Rosnotes-Encrypted_IV.pdf)
+- [Encrypted 5](../../../releases/download/Notebooks/Rosnotes-Encrypted_V.pdf)
+- [Encrypted 6](../../../releases/download/Notebooks/Rosnotes-Encrypted_VI.pdf)
+- [Encrypted 7](../../../releases/download/Notebooks/Rosnotes-Encrypted_VII.pdf)
 
 
 --- 
