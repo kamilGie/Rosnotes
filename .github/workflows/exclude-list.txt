@@ -1,8 +1,8 @@
 .git/
 /README.md
-./Organize/src/assets/*_name_*.png
-./Organize/src/assets/*_sol_*.png
-./Organize/src/assets/*_tmpl_*.png
-./Organize/Organize.py
-./.github/workflows/exclude-list.txt
+/Organize/src/assets/*_name_*.png
+/Organize/src/assets/*_sol_*.png
+/Organize/src/assets/*_tmpl_*.png
+/Organize/Organize.py
+/.github/workflows/exclude-list.txt
 
