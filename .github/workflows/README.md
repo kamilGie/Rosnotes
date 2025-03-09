@@ -13,11 +13,11 @@ Dla wylosowanego motywu wykonywane są następujące kroki:
 - Utworzenie zdjęcia motywu.
 - Wygenerowanie pliku README.md z informacją o prawdopodobieństwie wyboru danego motywu.
 
-> Takie rozwiązanie powoduje, że nie trzeba inicjować żadnego motywu – wystarczy dodać surowe rozwiązania. Dzięki temu skrypt moze działać szybciej a osoby dodające rozwiązania poprzez pull request, nawet bez znajomości haseł do motywów, mogą tworzyć motywy `Encrypted`, i wszystkie zeszyty pozostają na bieżąco.
+> Takie rozwiązanie powoduje, że nie trzeba inicjować żadnego motywu – wystarczy dodać surowe rozwiązania. Dzięki temu skrypt może działać szybciej, a osoby dodające rozwiązania poprzez pull request (nawet bez znajomości haseł do motywów) mogą tworzyć motywy `Encrypted`, i wszystkie zeszyty są na bieżąco ze zmianami.
 
 ### Synchronizacja z głównym repozytorium  
 
-Codziennie o północy workflow [template_sync.yml](./template_sync.yml) sprawdza zmiany w głównym repozytorium [Rosnotes](https://github.com/kamilGie/Rosnotes) i pobiera aktualizacje z wyjatkiem wybrancyh folderów z [exclude-list.txt](./exclude-list.txt), aby projekt był na bieżąco z najnowszymi mechanizmami i starterami.
+Codziennie o północy workflow [template_sync.yml](./template_sync.yml) sprawdza zmiany w głównym repozytorium [Rosnotes](https://github.com/kamilGie/Rosnotes) i pobiera aktualizacje z wyjątkiem wybranych folderów z [exclude-list.txt](./exclude-list.txt), aby projekt był na bieżąco z najnowszymi mechanizmami i starterami.
 
 ---
 
@@ -38,14 +38,14 @@ Workflow [test_starters.yml](./test_starters.yml) polega na:
 - Zainstalowaniu repozytorium zawierającego wszystkie motywy.
 - Dla każdego motywu, dodaniu na parzystych stronach koloru wynikowego.
 - Usunięciu wszystkich surowych rozwiązań.
-- Przetestowaniu, czy po instalacji repozytorium z zeszytem surowe rozwiązania pojawiają się wyłącznie na parzystych zadaniach.
+- Przetestowaniu, czy po instalacji repozytorium z zeszytem, surowe rozwiązania pojawiają się wyłącznie na parzystych zadaniach.
 
 Jeżeli test zakończy się powodzeniem, oznacza to, że zeszyt przeszedł kontrolę, a kolejne zeszyty są testowane, przy czym przed każdym testem usuwane są wszystkie surowe rozwiązania.
 
 > Test Starterów wykorzystuje dość restrykcyjną metodę usuwania rozwiązań, dlatego skrypt do usuwania pozostałych rozwiązań nie został wydzielony, aby uchronić użytkownika przed przypadkowym usunięciem rozwiązań z repozytorium.
 
 --- 
-Dodatkowo istnieje jeszcze workflow [change_logo.yml](./change_logo.yml), który uruchamia się codziennie o północy i w czwartek o 16  sprawdza, czy wypada święto. Jeśli tak, zmienia główne logo na tematyczne – dzięki temu, w czwartek studencki jest logo miasteczkowe oraz w okresie świątecznym, logo Rosnotes będzie miało świąteczną czapeczkę.  
+Dodatkowo istnieje jeszcze workflow [change_logo.yml](./change_logo.yml), który uruchamia się w każdy czwartek o 16:00 oraz codziennie o północy, sprawdzając, czy wypada święto. Jeśli tak, zmienia główne logo na tematyczne – dzięki temu, w studencki czwartek jest logo miasteczkowe oraz w okresie świątecznym, logo Rosnotes będzie miało świąteczną czapeczkę.  
 
 <p align="center">
   <img width="50" alt="Ja wymyślający ta super zmiane" src="https://github.com/user-attachments/assets/6e38b340-4871-4470-af08-3930d7f7459c" style="margin-left: 10px;">
