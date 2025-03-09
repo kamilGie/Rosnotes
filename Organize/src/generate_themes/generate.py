@@ -128,7 +128,7 @@ def regenerate_theme(
         for path in sol_to_generate:
             if path.parent.name != previous_set:
                 print(
-                    f"Generowanie {path.parent.name[:11]}dla motywu: \033[1m{theme_name:15}\033[0m",
+                    f"Generowanie {path.parent.name[:10]}dla motywu: \033[1m{theme_name:15}\033[0m",
                     end="\r",
                     flush=True,
                 )
