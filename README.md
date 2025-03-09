@@ -13,7 +13,7 @@
 
 ## 🚀 Przeznaczenie
 
-Repozytorium to szablon do tworzenia rozwiązań do zestawów zadań.  
+Repozytorium to szablon do tworzenia rozwiązań do zestawów zadań w różnych motywach.   
 Przykładowe repozytorium wykorzystujące ten szablon: [***Rosnotes Dyskretna***](https://github.com/kamilGie/Rosnotes-Dyskretna).
 
 ### 🛠️ Użycie szablonu Rosnotes do zestawu zadań
