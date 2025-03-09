@@ -5,8 +5,8 @@ Kliknij nazwę motywu, aby pobrać.
 ### [White](../../../releases/download/Notebooks/Rosnotes-White.pdf)
 <div style="display: flex; justify-content: space-between; align-items: center;">
   <img src="../Organize/src/assets/White_name_0.png" alt="Name" style="width: 36%">
-  <img src="../Organize/src/assets/White_tmpl_0.png" alt="Template" style="width: 31%">
-  <img src="../Organize/src/assets/White_sol_0.png" alt="Solution" style="width: 31%">
+  <img src="../Organize/src/assets/White_tmpl_0.png" alt="Template" style="width: 30%">
+  <img src="../Organize/src/assets/White_sol_0.png" alt="Solution" style="width: 30%">
 </div>
 
 
@@ -14,23 +14,23 @@ Kliknij nazwę motywu, aby pobrać.
 ### [Black](../../../releases/download/Notebooks/Rosnotes-Black.pdf)
 <div style="display: flex; justify-content: space-between; align-items: center;">
   <img src="../Organize/src/assets/Black_name_0.png" width="36%" height="auto" style="display: inline-block; margin: 0 1.5%; min-width: 250px;">
-  <img src="../Organize/src/assets/Black_tmpl_0.png" width="31%" height="auto" style="display: inline-block; margin: 0 1.5%; min-width: 250px;">
-  <img src="../Organize/src/assets/Black_sol_0.png" width="31%" height="auto" style="display: inline-block; margin: 0 1.5%; min-width: 250px;">
+  <img src="../Organize/src/assets/Black_tmpl_0.png" width="30%" height="auto" style="display: inline-block; margin: 0 1.5%; min-width: 250px;">
+  <img src="../Organize/src/assets/Black_sol_0.png" width="30%" height="auto" style="display: inline-block; margin: 0 1.5%; min-width: 250px;">
 </div>
 
 ### [Tangled](../../../releases/download/Notebooks/Rosnotes-Tangled.pdf)
 <div style="display: flex; justify-content: space-between; align-items: center;">
   <img src="../Organize/src/assets/Tangled_name_0.png" width="36%" height="auto" style="display: inline-block; margin: 0 1.5%; min-width: 250px;">
-  <img src="../Organize/src/assets/Tangled_tmpl_0.png" width="31%" height="auto" style="display: inline-block; margin: 0 1.5%; min-width: 250px;">
-  <img src="../Organize/src/assets/Tangled_sol_0.png" width="31%" height="auto" style="display: inline-block; margin: 0 1.5%; min-width: 250px;">
+  <img src="../Organize/src/assets/Tangled_tmpl_0.png" width="30%" height="auto" style="display: inline-block; margin: 0 1.5%; min-width: 250px;">
+  <img src="../Organize/src/assets/Tangled_sol_0.png" width="30%" height="auto" style="display: inline-block; margin: 0 1.5%; min-width: 250px;">
 </div>
 
 
 ### [Noxus](../../../releases/download/Notebooks/Rosnotes-Noxus.pdf)
 <div style="display: flex; justify-content: space-between; align-items: center;">
   <img src="../Organize/src/assets/Noxus_name_0.png" width="36%" height="auto" style="display: inline-block; margin: 0 1.5%; min-width: 250px;">
-  <img src="../Organize/src/assets/Noxus_tmpl_0.png" width="31%" height="auto" style="display: inline-block; margin: 0 1.5%; min-width: 250px;">
-  <img src="../Organize/src/assets/Noxus_sol_0.png" width="31%" height="auto" style="display: inline-block; margin: 0 1.5%; min-width: 250px;">
+  <img src="../Organize/src/assets/Noxus_tmpl_0.png" width="30%" height="auto" style="display: inline-block; margin: 0 1.5%; min-width: 250px;">
+  <img src="../Organize/src/assets/Noxus_sol_0.png" width="30%" height="auto" style="display: inline-block; margin: 0 1.5%; min-width: 250px;">
 </div>
 
 
