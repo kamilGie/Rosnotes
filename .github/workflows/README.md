@@ -47,8 +47,10 @@ Jeżeli test zakończy się powodzeniem, oznacza to, że zeszyt przeszedł kontr
 --- 
 Dodatkowo istnieje jeszcze workflow [change_logo.yml](./change_logo.yml), który uruchamia się w każdy czwartek o 16:00 oraz codziennie o północy, sprawdzając, czy wypada święto. Jeśli tak, zmienia główne logo na tematyczne – dzięki temu, w studencki czwartek jest logo miasteczkowe oraz w okresie świątecznym, logo Rosnotes będzie miało świąteczną czapeczkę.  
 
+
+
 <p align="center">
-  <img width="50" alt="Ja wymyślający ta super zmiane" src="https://github.com/user-attachments/assets/6e38b340-4871-4470-af08-3930d7f7459c" style="margin-left: 10px;">
+  <img width="50" alt="Ja wymyślający ta super zmiane" src="https://github.com/user-attachments/assets/790888c2-a83b-47e0-8b60-0288f5912544" style="margin-left: 10px;">
 </p>
 
 <p align="center">
