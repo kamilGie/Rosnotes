@@ -45,7 +45,7 @@ Hasła wymagane do odszyfrowania treści znajdują się w zeszytach publicznych 
 - [Encrypted 6](../../../releases/download/Notebooks/Rosnotes-Encrypted_VI.pdf)
 - [Encrypted 7](../../../releases/download/Notebooks/Rosnotes-Encrypted_VII.pdf)
 
-
+> Hasła zawsze będą w języku angielskim lub, jeśli brak tłumaczenia, bez polskich znaków. Wpisywane są od spacji, małymi literami i jednocześnie oznaczają nazwę odblokowywanego motywu.
 --- 
 
 >  **Oświadczenie prawne**
