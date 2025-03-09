@@ -4,13 +4,12 @@ Każdy starter polega na tym, że zawiera opis, co mają zawierać następne str
 
 
 <p align="center">
-    <img src="https://github.com/user-attachments/assets/50bc552f-41a5-4f28-90f8-8a10fe12e6b0" width="35%">
-    <img src="https://github.com/user-attachments/assets/2ab3d849-4ad2-4b76-b173-f014386b9056" width="29%">
-    <img src="https://github.com/user-attachments/assets/2ab3d849-4ad2-4b76-b173-f014386b9056" width="15%">
-    <img src="https://github.com/user-attachments/assets/2ab3d849-4ad2-4b76-b173-f014386b9056" width="6%">
-    <img src="https://github.com/user-attachments/assets/2ab3d849-4ad2-4b76-b173-f014386b9056" width="3%">
-    <img src="https://github.com/user-attachments/assets/2ab3d849-4ad2-4b76-b173-f014386b9056" width="1%">
-
+    <img src="https://github.com/user-attachments/assets/05da0c8c-ab99-47da-9178-209ced37424e" width="35%">
+    <img src="https://github.com/user-attachments/assets/069401cd-8cb5-440a-98b5-51f04a662820" width="29%">
+    <img src="https://github.com/user-attachments/assets/069401cd-8cb5-440a-98b5-51f04a662820" width="15%">
+    <img src="https://github.com/user-attachments/assets/069401cd-8cb5-440a-98b5-51f04a662820" width="6%">
+    <img src="https://github.com/user-attachments/assets/069401cd-8cb5-440a-98b5-51f04a662820" width="3%">
+    <img src="https://github.com/user-attachments/assets/069401cd-8cb5-440a-98b5-51f04a662820" width="1%">
 </p>
 
 ### Dodawanie/Edytowanie motywu
