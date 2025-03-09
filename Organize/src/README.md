@@ -17,7 +17,7 @@ Projekt składa się z 4 kroków:
   </a>
 </p>
 
-Każdy krok posiada swój folder jest niezależny od innych i można go uruchamiać samodzielnie.
+Każdy krok posiada swój folder, jest niezależny od innych i można go uruchamiać samodzielnie.
 
 --- 
 
