@@ -28,10 +28,10 @@ Rozwiązania będą dostępne w różnych motywach, z następującym prawdopodob
 **Noc** 🌙 (od **16:00 do 24:00**)  
 Encrypted_I i Encrypted_VI **+2%**  
 
-**Porannek** 🌅 (od **6:00 do 10:00**)  
+**Poranek** 🌅 (od **6:00 do 10:00**)  
 Encrypted_II **+2%**  
 
-**Czwartki studenckie** 🍻 (czwartek od **16:00 do 24:00**)  
+**Studenckie czwartki** 🍻 (czwartek od **16:00 do 24:00**)  
 Encrypted_IV i Encrypted_V **+5%**  
 
 **Walentynki** 💖 (14 lutego)  
