@@ -8,14 +8,14 @@ Projekt składa się z 4 kroków:
 4. **Budowanie zeszytu**. Proces zaczyna się od okładki i opisu, następnie zbiera z każdego folderu rozwiązanie motywu, dodając przed nim szablon. W każdym folderze dodawana jest okładka zestawu, a na koniec okładka tylna.
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=b0Zu_EqJeUA&feature=youtu.be" target="_blank">
     <picture>
-      <source srcset="https://github.com/user-attachments/assets/6452bbe9-1124-4c42-b192-f7f07c1c5845" media="(prefers-color-scheme: light)">
-      <source srcset="https://github.com/user-attachments/assets/5db5d609-cdaa-4e3f-a596-57d9e92a2eda" media="(prefers-color-scheme: dark)">
-      <img src="https://github.com/user-attachments/assets/6452bbe9-1124-4c42-b192-f7f07c1c5845" alt="Task solution" width=100%>
+      <source srcset="https://github.com/user-attachments/assets/b3652959-a6f4-409d-94af-f309d342fc5a" media="(prefers-color-scheme: light)">
+      <source srcset="https://github.com/user-attachments/assets/a594dffb-9342-4aef-9ce2-bd3ef6a4afd1" media="(prefers-color-scheme: dark)">
+      <img src="https://github.com/user-attachments/assets/b3652959-a6f4-409d-94af-f309d342fc5a" alt="Task solution" width=100%>
     </picture>
-  </a>
 </p>
+
+
 
 Każdy krok posiada swój folder, jest niezależny od innych i można go uruchamiać samodzielnie.
 
