@@ -16,9 +16,10 @@
 Użycie szablonu polega na wycięciu treści zadań, nazwaniu ich `desc_{numer zadania}.png` i umieszczeniu w folderach `Zestaw {numer zestawu} {nazwa zestawu}` w folderze [Solutions](./Solutions).
 
 <div align=center>
-  <img width="256" alt="Zrzut ekranu 2025-03-8 o 12 46 26" src="https://github.com/user-attachments/assets/516edec8-4a02-4c5e-8b95-55b86d291199" />
-
+  <img width="256" alt="Zrzut ekranu 2025-03-8 o 12 46 26" src="https://github.com/user-attachments/assets/6e9bba96-e9d8-4c67-84a0-b1629fe0a5ad" />
 </div>
+
+
 
 Wypełniony w ten sposób folder [Solutions](./Solutions) jest gotowy do tworzenia zeszytów oraz dalszego rozwijania projektu. Wystarczy jeszcze tylko podać nazwę przedmiotu w skrypcie [Organize/Organize.py](./Organize/Organize.py) w klasie configu i uruchomić ten skrypt.
 
@@ -34,19 +35,22 @@ Projekt w dużej mierze korzysta z GitHub Actions ([link do tego, co to jest](ht
 1. **Wygenerowanie tokena GitHub**  
    Na początku wygeneruj token GitHub ([link jak to zrobić (30s)](https://www.youtube.com/shorts/rlO6C6dDKNs)). Token trzeba wygenerować z odpowiednimi ustawieniami.
 
-   ![Zrzut ekranu 2025-03-8 o 21 47 00](https://github.com/user-attachments/assets/52ab6aee-e304-41cb-a2e4-384b2b0be255)
+
+![image](https://github.com/user-attachments/assets/3f97956d-5dc6-4743-a4ec-718befdbacbb)
+
 
 2. **Ustawienie sekretów**  
    Następnie, w sekretach GitHub, w ustawieniach repozytorium, w zakładce **Secrets and variables > Actions**, ustaw token oraz hasła do zeszytów, które znasz (nie trzeba podawać wszystkich, README będzie zawierać tylko te zeszyty, do których hasło zostało podane lub te, które nie zawierają hasła).
 
-   ![Zrzut ekranu 2025-03-8 o 21 47 40](https://github.com/user-attachments/assets/557bc992-04c3-4dce-b265-9f24925422d6)
+![image](https://github.com/user-attachments/assets/cae16dba-e0ac-4a02-9a9c-046f5ad3d388)
+
 
    > Wszystkie sekrety muszą być nazwane dokładnie tak samo.
 
 3. **Udzielenie zgody workflow**  
    Na sam koniec udziel workflowowi zgody na zmiany w repozytorium. Robi się to w ustawieniach repozytorium w zakładce **Actions > General**.
 
-   ![Zrzut ekranu 2025-03-8 o 21 48 40](https://github.com/user-attachments/assets/f052481d-55c7-4600-82c5-735f6da3b9ef)
+![image](https://github.com/user-attachments/assets/21f949f6-bb04-48bc-8c84-d6dc57fda1d8)
 
 Tak ustawiony projekt jest gotowy do testowania i dodawania zadań. Każde nowe zadanie będzie automatycznie dodawane do linków w wydaniach (releases) oraz do README, a także do mechanizmu testowania.
 
