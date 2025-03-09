@@ -1,9 +1,9 @@
-name: Aktualizacja README
+name: Update README
 
 on:
   schedule:
     - cron: '0 0 * * *'  # Workflow uruchamia się codziennie o północy
-    - cron: '0 16 * * 4'  # Workflow uruchamia się w czwartki o 16:00
+    - cron: '0 14 * * 4'  # Workflow uruchamia się w czwartki o 16:00
   workflow_dispatch:
 
 jobs:
@@ -13,7 +13,7 @@ jobs:
       - name: Checkout repozytorium
         uses: actions/checkout@v3
 
-      - name: Ustaw treść README w zależności od święta
+      - name: Set README
         id: set_readme
         run: |
 
