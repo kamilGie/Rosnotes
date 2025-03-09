@@ -56,8 +56,8 @@ Dodatkowo istnieje jeszcze workflow [change_logo.yml](./change_logo.yml), który
 <p align="center">
   <a href="https://www.youtube.com/watch?v=b0Zu_EqJeUA&feature=youtu.be" target="_blank">
     <picture>
-      <source srcset="../Organize/src/assets/logo_light.png" media="(prefers-color-scheme: light)">
-      <source srcset="../Organize/src/assets/logo_dark.png" media="(prefers-color-scheme: dark)">
-      <img src="../Organize/src/assets/logo_light.png" alt="Logo" width="400">
+      <source srcset="../../Organize/src/assets/logo_light.png" media="(prefers-color-scheme: light)">
+      <source srcset="../../Organize/src/assets/logo_dark.png" media="(prefers-color-scheme: dark)">
+      <img src="../../Organize/src/assets/logo_light.png" alt="Logo" width="400">
     </picture>
 </p>
