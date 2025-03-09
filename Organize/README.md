@@ -1,10 +1,11 @@
 # W tym folderze należy umieścić zeszyt, aby dodać lub zmienić rozwiązania projektu
 
 <p align="center" style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="https://github.com/user-attachments/assets/ba06659a-1d28-4250-af34-1857c34c193a" alt="IMG_1014 2" style="height: 3nastepna storna-min.pnglogo dark.pnglogo light.pnglogo napis black.pnglogo napis light .png50px; width: auto;">
+    <img src="https://github.com/user-attachments/assets/ba06659a-1d28-4250-af34-1857c34c193a" alt="IMG_1014 2" style="height: 350px; width: auto;">
     <img src="https://github.com/user-attachments/assets/159fbd03-27e8-4a07-970b-ef6d21aa0d30" alt="IMG_1017" style="height: 350px; width: auto;">
     <img src="https://github.com/user-attachments/assets/b5606666-0b63-4952-9310-8964729038c4" alt="IMG_1017" style="height: 350px; width: auto;">
 </p>
+
 
 
 Wypełnij szablon, używając koloru wyniku (podanego na początku zeszytu w opisie) i udostępnij cały zeszyt jako plik PDF. Następnie umieść zeszyt w tym folderze i uruchom skrypt z tego folderu  [`Organize.py`](./Organize.py) . Skrypt będzie szukał kolorów wyniku w szablonach i, gdzie je znajdzie, zaktualizuje rozwiązanie oraz zbuduje zeszyty ulepszone o Twoje rozwiązania z szablonów do folderu [`Notebooks`](../Notebooks/).
