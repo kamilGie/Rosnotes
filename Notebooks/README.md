@@ -59,10 +59,8 @@ Hasła wymagane do odszyfrowania treści znajdują się w zeszytach publicznych 
 <p align="center">
   <a href="https://www.youtube.com/watch?v=b0Zu_EqJeUA&feature=youtu.be" target="_blank">
     <picture>
-      <source srcset="https://github.com/user-attachments/assets/f527aa3b-e050-4b58-9750-ed519a4a7af6" media="(prefers-color-scheme: light)">
-      <source srcset="https://github.com/user-attachments/assets/d1aceab9-e226-4ad7-bf7e-92d89653f063" media="(prefers-color-scheme: dark)">
-      <img src="https://github.com/user-attachments/assets/f527aa3b-e050-4b58-9750-ed519a4a7af6" alt="Task solution" width="400">
+      <source srcset="../Organize/src/assets/logo_light.png" media="(prefers-color-scheme: light)">
+      <source srcset="../Organize/src/assets/logo_dark.png" media="(prefers-color-scheme: dark)">
+      <img src="../Organize/src/assets/logo_light.png" alt="Logo" width="400">
     </picture>
 </p>
-
-
