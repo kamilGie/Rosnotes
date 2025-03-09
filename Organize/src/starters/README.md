@@ -17,7 +17,7 @@ Każdy starter polega na tym, że zawiera opis, co mają zawierać następne str
 
 Dodawanie nowego motywu ogranicza się do dodania nowego startera z istniejącego już startera i nadania mu wybranej nazwy. Można również edytować istniejące strony starterów, jeśli na przykład uznamy, że jakiś motyw zawiera nieodpowiednie rozwiązania lub szablony.
 
-Trzeba pamiętać, że przy rysowaniu do szablonów obowiązują zasady odwrotne niż przy rozwiązywaniu szablonów.   Oznacza to, że używane mogą być tylko długopisy zależne od nacisku oraz kredki, ponieważ skrypt nie przepisuje ich, aby mogły zdobić szablony.
+Trzeba pamiętać, że przy tworzeniu szablonów obowiązują zasady odwrotne, niż przy rozwiązywaniu szablonów. Oznacza to, że używane mogą być tylko długopisy zależne od nacisku oraz kredki, ponieważ skrypt nie przepisuje ich, aby mogły zdobić szablony.
 
 > Jeśli chcemy dodać motyw Encrypted, należy ustawić hasło do otwarcia startera.
 
