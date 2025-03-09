@@ -1,7 +1,7 @@
 # W tym folderze należy umieścić zeszyt, aby dodać lub zmienić rozwiązania projektu
 
 <p align="center" style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="https://github.com/user-attachments/assets/ba06659a-1d28-4250-af34-1857c34c193a" alt="IMG_1014 2" style="height: 350px; width: auto;">
+    <img src="https://github.com/user-attachments/assets/ba06659a-1d28-4250-af34-1857c34c193a" alt="IMG_1014 2" style="height: 3nastepna storna-min.pnglogo dark.pnglogo light.pnglogo napis black.pnglogo napis light .png50px; width: auto;">
     <img src="https://github.com/user-attachments/assets/159fbd03-27e8-4a07-970b-ef6d21aa0d30" alt="IMG_1017" style="height: 350px; width: auto;">
     <img src="https://github.com/user-attachments/assets/b5606666-0b63-4952-9310-8964729038c4" alt="IMG_1017" style="height: 350px; width: auto;">
 </p>
@@ -93,8 +93,9 @@ Trzeba też pamiętać, że czcionki są między sobą różne, więc lepiej nie
 <p align="center">
   <a href="https://www.youtube.com/watch?v=b0Zu_EqJeUA&feature=youtu.be" target="_blank">
     <picture>
-      <source srcset="https://github.com/user-attachments/assets/f527aa3b-e050-4b58-9750-ed519a4a7af6" media="(prefers-color-scheme: light)">
-      <source srcset="https://github.com/user-attachments/assets/d1aceab9-e226-4ad7-bf7e-92d89653f063" media="(prefers-color-scheme: dark)">
-      <img src="https://github.com/user-attachments/assets/f527aa3b-e050-4b58-9750-ed519a4a7af6" alt="Task solution" width="400">
+      <source srcset="./src/assets/logo_light.png" media="(prefers-color-scheme: light)">
+      <source srcset="./src/assets/logo_dark.png" media="(prefers-color-scheme: dark)">
+      <img src="./src/assets/logo_light.png" alt="Logo" width="400">
     </picture>
 </p>
+

@@ -43,3 +43,15 @@ Encrypted_III **90% szans na wylosowanie!**
 > Losowanie motywu następuje w chwili dodania zadania do repozytorium projektu 
 
 </div>
+
+
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=b0Zu_EqJeUA&feature=youtu.be" target="_blank">
+    <picture>
+      <source srcset="../Organize/src/assets/logo_light.png" media="(prefers-color-scheme: light)">
+      <source srcset="../Organize/src/assets/logo_dark.png" media="(prefers-color-scheme: dark)">
+      <img src="../Organize/src/assets/logo_light.png" alt="Logo" width="400">
+    </picture>
+</p>
+
+
