@@ -1,9 +1,9 @@
 <p align="center">
   <a href="https://www.youtube.com/watch?v=b0Zu_EqJeUA&feature=youtu.be" target="_blank">
     <picture>
-      <source srcset="https://github.com/user-attachments/assets/78bb78e5-0841-44a4-938e-b3ec8f776c6e" media="(prefers-color-scheme: light)">
-      <source srcset="https://github.com/user-attachments/assets/78c11295-8336-4467-be7e-2e31ded448a8" media="(prefers-color-scheme: dark)">
-      <img src="https://github.com/user-attachments/assets/78bb78e5-0841-44a4-938e-b3ec8f776c6e" alt="Task solution" width="800">
+      <source srcset="./Organize/src/assets/logo_full_light.png" media="(prefers-color-scheme: light)">
+      <source srcset="./Organize/src/assets/logo_full_dark.png" media="(prefers-color-scheme: dark)">
+      <img src="./Organize/src/assets/logo_full_dark.png" alt="Task solution" width="800">
     </picture>
 </p>
 
@@ -77,7 +77,7 @@ Projekt składa się z **4 głównych folderów**:
 
 W zeszycie każde zadanie ma szablon, a rozwiązane zadanie będzie mieć dodatkowo rozwiązanie na następnej stronie.
 
-![Motyw (1)](https://github.com/user-attachments/assets/81ede432-39d1-464e-a2f9-7e2eb897f6f2)
+![Motyw (1)](./Organize/src/assets/example.png)
 
 Aby pobrać zeszyt, przejdź do [**`Notebooks`**](./Notebooks) i kliknij nazwę motywu.
 
@@ -127,9 +127,9 @@ Błędy w rozwiązaniach lub w skrypcie zgłaszaj na ****Issues**** lub <a href=
 <p align="center">
   <a href="https://www.youtube.com/watch?v=b0Zu_EqJeUA&feature=youtu.be" target="_blank">
     <picture>
-      <source srcset="https://github.com/user-attachments/assets/f527aa3b-e050-4b58-9750-ed519a4a7af6" media="(prefers-color-scheme: light)">
-      <source srcset="https://github.com/user-attachments/assets/d1aceab9-e226-4ad7-bf7e-92d89653f063" media="(prefers-color-scheme: dark)">
-      <img src="https://github.com/user-attachments/assets/f527aa3b-e050-4b58-9750-ed519a4a7af6" alt="Task solution" width="400">
+      <source srcset="./Organize/src/assets/logo_light.png" media="(prefers-color-scheme: light)">
+      <source srcset="./Organize/src/assets/logo_dark.png" media="(prefers-color-scheme: dark)">
+      <img src="./Organize/src/assets/logo_light.png" alt="Logo" width="400">
     </picture>
 </p>
 
