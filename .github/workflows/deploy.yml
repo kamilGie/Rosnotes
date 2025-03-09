@@ -26,18 +26,25 @@ jobs:
         run: |
          pip3.10 install -r requirements.txt
       
-      - name: Run Organize.py  witf all passwords
+      - name: Run Organize.py with all passwords
+        env:
+          PASSWORD_I: ${{ secrets.PASSWORD_ENCRYPTED_I }}
+          PASSWORD_II: ${{ secrets.PASSWORD_ENCRYPTED_II }}
+          PASSWORD_III: ${{ secrets.PASSWORD_ENCRYPTED_III }}
+          PASSWORD_IV: ${{ secrets.PASSWORD_ENCRYPTED_IV }}
+          PASSWORD_V: ${{ secrets.PASSWORD_ENCRYPTED_V }}
+          PASSWORD_VI: ${{ secrets.PASSWORD_ENCRYPTED_VI }}
+          PASSWORD_VII: ${{ secrets.PASSWORD_ENCRYPTED_VII }}
         run: |
-          # Jesli nie bedzie sekretu wpisuej 3 razy enter zeby pominąc haslo
-          python3.10 Organize/Organize.py INIT <<EOF
-          ${{ secrets.PASSWORD_ENCRYPTED_I || '\n\n\n' }}
-          ${{ secrets.PASSWORD_ENCRYPTED_II || '\n\n\n' }}
-          ${{ secrets.PASSWORD_ENCRYPTED_III || '\n\n\n' }}
-          ${{ secrets.PASSWORD_ENCRYPTED_IV || '\n\n\n' }}
-          ${{ secrets.PASSWORD_ENCRYPTED_V || '\n\n\n' }}
-          ${{ secrets.PASSWORD_ENCRYPTED_VI || '\n\n\n' }}
-          ${{ secrets.PASSWORD_ENCRYPTED_VII || '\n\n\n' }}
-          EOF
+          (
+            [ -z "$PASSWORD_I" ] && printf '\n\n\n' || echo "$PASSWORD_I"
+            [ -z "$PASSWORD_II" ] && printf '\n\n\n' || echo "$PASSWORD_II"
+            [ -z "$PASSWORD_III" ] && printf '\n\n\n' || echo "$PASSWORD_III"
+            [ -z "$PASSWORD_IV" ] && printf '\n\n\n' || echo "$PASSWORD_IV"
+            [ -z "$PASSWORD_V" ] && printf '\n\n\n' || echo "$PASSWORD_V"
+            [ -z "$PASSWORD_VI" ] && printf '\n\n\n' || echo "$PASSWORD_VI"
+            [ -z "$PASSWORD_VII" ] && printf '\n\n\n' || echo "$PASSWORD_VII"
+          ) | python3.10 Organize/Organize.py INIT
 
       - name: Upload Notebooks
         uses: actions/upload-artifact@v4
