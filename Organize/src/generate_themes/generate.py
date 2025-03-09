@@ -97,6 +97,7 @@ def regenerate_theme(
     is_init: bool,
     desc_solution: str,
     notebook_name: str,
+    no_sol_theme: Path,
 ):
     try:
         # Ustalanie ścieżki do startera dla danego motywu
@@ -106,7 +107,10 @@ def regenerate_theme(
         # Wybór rozwiązań do generowania – jeżeli is_init to generujemy wszystkie, w przeciwnym razie używamy updated_sol
         sol_to_generate = generate_all_sol_paths() if is_init else updated_sol
         previous_set = ""
-        if is_init and not any(True for _ in sol_to_generate):
+        any_sol_to_generate = any(
+            True for _ in (generate_all_sol_paths() if is_init else updated_sol)
+        )
+        if is_init and not any_sol_to_generate:
             # jesli nie ma zadnych rozwiązań
             png_file = next(Path("./Solutions").rglob("*.png"), None)
             desc_solution = "./Organize/src/assets/no_sol_theme/"
@@ -117,6 +121,9 @@ def regenerate_theme(
                 )
 
             sol_to_generate = [Path(desc_solution)]
+            # oznaczam ze opis jest bez zadania by móc potem zaaktualizowac przy pierwszym dodaniu
+            with open(Path(desc_solution) / "resources" / "active", "w"):
+                pass
 
         for path in sol_to_generate:
             if path.parent.name != previous_set:
@@ -147,7 +154,7 @@ def regenerate_theme(
                 print(f"\033[33m Ostrzezenie: Plik {pdf_source} nie istnieje \033[0m")
 
         # Jeśli mamy inicjalizację, przetwarzamy opis rozwiązania
-        if is_init:
+        if is_init or no_sol_theme.exists():
             if desc_solution:
                 # Jeśli użytkownik podał ścieżkę, sprawdź jej format i dostosuj ją
                 if len(desc_solution) > 1 and desc_solution[1] == ".":
@@ -180,12 +187,25 @@ def generate_themes(
                 [theme, updated_sol, should_init, desc_solution, notebook_name]
             )
 
+    no_sol_theme_active = (
+        Path("./Organize/src/assets/no_sol_theme/") / "resources" / "active"
+    )
     with multiprocessing.Pool() as pool:
         pool.starmap(
             regenerate_theme,
             [
-                (theme, updated_sol, should_regenerate, desc_solution, notebook_name)
+                (
+                    theme,
+                    updated_sol,
+                    should_regenerate,
+                    desc_solution,
+                    notebook_name,
+                    no_sol_theme_active,
+                )
                 for theme, updated_sol, should_regenerate, desc_solution, notebook_name in themes_to_update
             ],
         )
+
+    if no_sol_theme_active.exists() and updated_sol:
+        no_sol_theme_active.unlink()
     print(f"\033[32mPomyslnie wygenerowano motywy!\033[0m { ' ' * 30}", end="\r")

@@ -30,6 +30,7 @@ class Themes:
             "Encrypted_VII": 1,
         }
 
+        self.theme = {k: v for k, v in self.theme.items() if k in self.env_data}
         # Modyfikujemy wagi na podstawie aktualnej daty/godziny
         self.apply_weight_modifiers()
 
@@ -55,11 +56,10 @@ class Themes:
                 else:
                     self.theme[key] *= 2  # Motywy "Encrypted" mają większą wagę
 
-            # Jak motywy encrypted sa zablokowane 
+            # Jak motywy encrypted sa zablokowane
             if all(value == 0 for value in self.theme.values()) and self.theme:
                 first_key = next(iter(self.theme))
                 self.theme[first_key] = 1
-                
 
         # Czwartki 16:00 - 24:00 – Encrypted_IV i Encrypted_V mają 10% więcej
         if now.weekday() == 3 and 16 <= now.hour < 24:
@@ -93,7 +93,7 @@ class Themes:
         choices, weights = zip(*weighted_themes)
         selected_theme = random.choices(choices, weights=weights, k=1)[0]
 
-        return selected_theme, self.env_data.get(selected_theme, {})
+        return selected_theme, self.env_data.get(selected_theme, "Black")
 
     def chances_to_appear(self, theme):
         total_weight = sum(self.theme.values())
