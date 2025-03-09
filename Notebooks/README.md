@@ -54,7 +54,7 @@ Hasła wymagane do odszyfrowania treści znajdują się w zeszytach publicznych 
 > - Riot Games, w tym elementy związane z grą League of Legends, które są ich wyłączną własnością,
 > - Walt Disney Company, w tym treści związane z ich filmami, które są ich wyłączną własnością.
 >
-> Projekt nie jest wspierany, sponsorowany ani powiązany w jakikolwiek sposób z, Riot Games, Walt Disney Company ani żadnymi podmiotami powiązanymi. Wszelkie prawa autorskie oraz znaki towarowe pozostają własnością ich prawnych właścicieli. Projekt ma charakter edukacyjny i niekomercyjny.
+> Projekt nie jest wspierany, sponsorowany ani powiązany w jakikolwiek sposób z Riot Games, Walt Disney Company ani żadnymi podmiotami powiązanymi. Wszelkie prawa autorskie oraz znaki towarowe pozostają własnością ich prawnych właścicieli. Projekt ma charakter edukacyjny i niekomercyjny.
 
 <p align="center">
   <a href="https://www.youtube.com/watch?v=b0Zu_EqJeUA&feature=youtu.be" target="_blank">
