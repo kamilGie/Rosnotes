@@ -11,7 +11,12 @@
 
 ---
 
-### Użycie szablonu Rosnotes do zestawu zadań
+## 🚀 Przeznaczenie
+
+Repozytorium to szablon do tworzenia rozwiązań do zestawów zadań.  
+Przykładowe repozytorium wykorzystujące ten szablon: [***Rosnotes Dyskretna***](https://github.com/kamilGie/Rosnotes-Dyskretna).
+
+### 🛠️ Użycie szablonu Rosnotes do zestawu zadań
 
 Użycie szablonu polega na wycięciu treści zadań, nazwaniu ich `desc_{numer zadania}.png` i umieszczeniu w folderach `Zestaw {numer zestawu} {nazwa zestawu}` w folderze [Solutions](./Solutions).
 
@@ -81,11 +86,18 @@ Projekt składa się z **4 głównych folderów**:
 
 W zeszycie każde zadanie ma szablon, a rozwiązane zadanie będzie mieć dodatkowo rozwiązanie na następnej stronie.
 
-![Motyw (1)](./Organize/src/assets/example.png)
+<p align="center">
+    <picture>
+      <source srcset="https://github.com/user-attachments/assets/0be2dca0-421d-4542-81e1-b5e774bb2931" media="(prefers-color-scheme: light)">
+      <source srcset="./Organize/src/assets/example.png" media="(prefers-color-scheme: dark)">
+      <img src="https://github.com/user-attachments/assets/0be2dca0-421d-4542-81e1-b5e774bb2931" alt="Task solution" width="1000">
+    </picture>
+</p>
 
 Aby pobrać zeszyt, przejdź do [**`Notebooks`**](./Notebooks) i kliknij nazwę motywu.
 
 ---
+
 
 
 ### 🔍 Ukryte motywy
