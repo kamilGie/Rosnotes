@@ -2,7 +2,7 @@
 
 <p align="center" style="display: flex; justify-content: center; align-items: center; gap: 10px;">
     <img src="https://github.com/user-attachments/assets/b0f7c3ad-6482-47ee-8ebc-ee76b2877078" alt="IMG_1014 2" style="height: 350px; width: auto;">
-    <img src="https://github.com/user-attachments/assets/df0036d1-0d8e-4709-8bf9-74b133f06afd)" alt="IMG_1017" style="height: 350px; width: auto;">
+    <img src="https://github.com/user-attachments/assets/df0036d1-0d8e-4709-8bf9-74b133f06afd" alt="IMG_1017" style="height: 350px; width: auto;">
     <img src="https://github.com/user-attachments/assets/c42c668c-35f2-45ce-b629-c5f84feb351b" alt="IMG_1017" style="height: 350px; width: auto;">
 </p>
 
@@ -59,8 +59,8 @@ pip install -r requirements.txt
 
 
 <p align="center">
-    <img src="https://github.com/user-attachments/assets/3d8fc26a-47cf-4676-b004-20003fbad9fd" width="35%">
-    <img src="https://github.com/user-attachments/assets/9070dfff-b744-4360-aa3c-9af059546ff7" width="25%">
+    <img src="https://github.com/user-attachments/assets/9070dfff-b744-4360-aa3c-9af059546ff7" width="35%">
+    <img src="https://github.com/user-attachments/assets/3d8fc26a-47cf-4676-b004-20003fbad9fd" width="25%">
     <img src="https://github.com/user-attachments/assets/0d920863-5567-4c0e-ba29-b9c9b0217deb" width="35%">
 </p>
 
