@@ -22,7 +22,7 @@ def main():
     if os.path.exists(holiday_file):
         replacement_file = holiday_file
         print(f"Znaleziono plik dla dzisiejszej daty: {holiday_file}")
-    elif 16.0 < time < 24 and datetime.datetime.now().weekday() == 3:
+    elif 14.0 < time < 24 and datetime.datetime.now().weekday() == 3:
         replacement_file = thursday_file
     elif os.path.exists(normal_file):
         replacement_file = normal_file
