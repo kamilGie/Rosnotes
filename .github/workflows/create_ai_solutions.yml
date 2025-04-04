@@ -1,0 +1,58 @@
+name: Create ChatGPT Solutions
+
+on:
+  workflow_dispatch:
+
+jobs:
+  generate-notebooks:
+    runs-on: macos-latest
+
+
+    steps:
+      - name: clone repo
+        uses: actions/checkout@v4
+      
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      
+      - name: Install dependencies
+        run: |
+          pip3.10 install -r requirements.txt
+          pip3.10 install openai
+          brew install --cask mactex-no-gui
+          echo "/Library/TeX/texbin" >> $GITHUB_PATH
+
+      - name: Run ai_solutions.py with Secret Key
+        run: |
+          python3 "Organize/src/additional_scripts/ai_solutions.py"
+        env:
+          OPEN_AI_KEY: ${{ secrets.OPEN_AI_KEY }}
+
+      - name: Run Organize.py with White
+        run: |
+          python3.10 Organize/Organize.py White
+
+      - name: Run add_readme.py
+        run: |
+            python3 "Organize/src/additional_scripts/add_readme.py"
+
+      - name: Commit and push changes
+        env:
+          TOKEN_GITHUB: ${{ secrets.TOKEN_GITHUB }}
+        run: |
+          # Konfiguracja danych użytkownika dla Git
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Dodaj wszystkie zmodyfikowane pliki
+          git add Solutions/.
+          if git diff --cached --quiet -- Solutions/; then
+              echo "Brak zmian w Solutions"
+          else
+              git pull # na wypadek gdyby uzytknik cos dodal w miedzy czasie
+              git commit -m "Dodaje readme wygenerowane przez chat gpt"
+              git push "https://x-access-token:${TOKEN_GITHUB}@github.com/${{ github.repository }}.git" HEAD:${{ github.ref }}
+          fi
+        shell: bash

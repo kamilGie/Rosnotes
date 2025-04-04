@@ -13,6 +13,7 @@ __pycache__/
 !/Organize/src/assets/no_sol_theme/resources/pdfs/source_raw.pdf
 /Solutions/**/resources/pdfs/*.pdf
 !/Solutions/**/resources/pdfs/source_raw.pdf
+*aux
 
 
 
