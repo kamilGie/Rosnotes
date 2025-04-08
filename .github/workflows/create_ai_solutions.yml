@@ -56,3 +56,76 @@ jobs:
               git push "https://x-access-token:${TOKEN_GITHUB}@github.com/${{ github.repository }}.git" HEAD:${{ github.ref }}
           fi
         shell: bash
+
+      - name: Run Organize.py with all passwords
+        env:
+          PASSWORD_I: ${{ secrets.PASSWORD_ENCRYPTED_I }}
+          PASSWORD_II: ${{ secrets.PASSWORD_ENCRYPTED_II }}
+          PASSWORD_III: ${{ secrets.PASSWORD_ENCRYPTED_III }}
+          PASSWORD_IV: ${{ secrets.PASSWORD_ENCRYPTED_IV }}
+          PASSWORD_V: ${{ secrets.PASSWORD_ENCRYPTED_V }}
+          PASSWORD_VI: ${{ secrets.PASSWORD_ENCRYPTED_VI }}
+          PASSWORD_VII: ${{ secrets.PASSWORD_ENCRYPTED_VII }}
+        run: |
+          (
+            [ -z "$PASSWORD_I" ] && printf '\n\n\n' || echo "$PASSWORD_I"
+            [ -z "$PASSWORD_II" ] && printf '\n\n\n' || echo "$PASSWORD_II"
+            [ -z "$PASSWORD_III" ] && printf '\n\n\n' || echo "$PASSWORD_III"
+            [ -z "$PASSWORD_IV" ] && printf '\n\n\n' || echo "$PASSWORD_IV"
+            [ -z "$PASSWORD_V" ] && printf '\n\n\n' || echo "$PASSWORD_V"
+            [ -z "$PASSWORD_VI" ] && printf '\n\n\n' || echo "$PASSWORD_VI"
+            [ -z "$PASSWORD_VII" ] && printf '\n\n\n' || echo "$PASSWORD_VII"
+          ) | python3.10 Organize/Organize.py INIT
+
+      - name: Upload Notebooks
+        uses: actions/upload-artifact@v4
+        with:
+          name: pdf-assets
+          path: Notebooks/**/*.pdf
+          retention-days: 1
+
+      - name: Commit and push changes
+        env:
+          TOKEN_GITHUB: ${{ secrets.TOKEN_GITHUB }}
+        run: |
+          # Konfiguracja danych użytkownika dla Git
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Dodaj wszystkie zmodyfikowane pliki
+          git add .
+          if git diff --cached --quiet -- /.; then
+              echo "Brak zmian w Solutions"
+          else
+              git pull # na wypadek gdyby uzytknik cos dodal w miedzy czasie
+              git commit -m "Dodaje readme"
+              git push "https://x-access-token:${TOKEN_GITHUB}@github.com/${{ github.repository }}.git" HEAD:${{ github.ref }}
+          fi
+        shell: bash
+
+
+  update-release:
+    needs: generate-notebooks
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download Notebooks
+        uses: actions/download-artifact@v4
+        with:
+          name: pdf-assets
+          path: release-pdfs
+      - name: Rename files before release
+        run: |
+          for file in release-pdfs/*.pdf; do
+            new_name=$(echo "$file" | sed -E 's/ (.*)-/-/')
+            [ "$file" != "$new_name" ] && mv "$file" "$new_name"
+          done
+
+
+      - name: update Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: Notebooks
+          update: true
+          files: release-pdfs/**/*.pdf
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN_GITHUB }}
