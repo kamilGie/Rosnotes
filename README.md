@@ -98,7 +98,8 @@ Aby pobrać zeszyt, przejdź do [**`Notebooks`**](./Notebooks) i kliknij nazwę 
 
 ---
 
-
+### 🤖 Rozwiązanie wszystkich zadań przez ChatGPT
+Po dodaniu klucza API do ChatGPT w zmiennych środowiskowych (secret variables), można wygenerować rozwiązania do każdego zadania bez potrzeby ich samodzielnego rozwiązywania, dzięki czemu od początku ma się dostęp do kompletnych odpowiedzi.
 
 ### 🔍 Ukryte motywy
 4 motywy publiczne oraz 7 motywów encrypted. W motywach publicznych ukryte są podpowiedzi do haseł motywów encrypted. Hasło zawsze będzie także nazwą danego motywu, który odblokowujesz.
