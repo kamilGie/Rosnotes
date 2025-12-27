@@ -1,9 +1,9 @@
 <p align="center">
   <a href="https://www.youtube.com/watch?v=b0Zu_EqJeUA&feature=youtu.be" target="_blank">
     <picture>
-      <source srcset="https://github.com/user-attachments/assets/c89a0c7a-c3ae-4a85-870c-8c2160e44d7b" media="(prefers-color-scheme: light)">
-      <source srcset="https://github.com/user-attachments/assets/5ea14ebc-c736-40f2-9eb6-789dd34d24da" media="(prefers-color-scheme: dark)">
-      <img src="https://github.com/user-attachments/assets/c89a0c7a-c3ae-4a85-870c-8c2160e44d7b" alt="Task solution" width="800">
+      <source srcset="./Organize/src/assets/logo_full_light.png" media="(prefers-color-scheme: light)">
+      <source srcset="./Organize/src/assets/logo_full_dark.png" media="(prefers-color-scheme: dark)">
+      <img src="./Organize/src/assets/logo_full_dark.png" alt="Task solution" width="800">
     </picture>
 </p>
 
