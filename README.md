@@ -11,12 +11,12 @@
 
 ---
 
-## 🚀 Przeznaczenie
+##  Przeznaczenie
 
 Repozytorium to szablon umożliwiający tworzenie rozwiązań do zestawów zadań w różnych motywach.  
 Przykładowe repozytorium wykorzystujące ten szablon: [***Rosnotes Dyskretna***](https://github.com/kamilGie/Rosnotes-Dyskretna).
 
-### 🛠️ Użycie szablonu Rosnotes do zestawu zadań
+###  Użycie szablonu Rosnotes do zestawu zadań
 
 Użycie szablonu polega na wycięciu treści zadań, nazwaniu ich `desc_{numer zadania}.png` i umieszczeniu w folderach `Zestaw {numer zestawu} {nazwa zestawu}` w folderze [Solutions](./Solutions).
 
@@ -69,7 +69,7 @@ Tak ustawiony projekt jest gotowy do testowania i dodawania zadań. Każde nowe 
 <!--  Usuń ten fragment po użyciu szablonu   -->
 
 
-### 🔧 Używanie Projektu
+###  Używanie Projektu
 
 Projekt składa się z **4 głównych folderów**:
 
@@ -82,7 +82,7 @@ Projekt składa się z **4 głównych folderów**:
 
 ---
 
-### 📓 Zawartość zeszytów
+###  Zawartość zeszytów
 
 W zeszycie każde zadanie ma szablon, a rozwiązane zadanie będzie mieć dodatkowo rozwiązanie na następnej stronie.
 
@@ -98,32 +98,32 @@ Aby pobrać zeszyt, przejdź do [**`Notebooks`**](./Notebooks) i kliknij nazwę 
 
 ---
 
-### 🤖 Rozwiązanie wszystkich zadań przez ChatGPT
+###  Rozwiązanie wszystkich zadań przez ChatGPT
 Po dodaniu klucza API do ChatGPT w zmiennych środowiskowych (secret variables), można wygenerować rozwiązania do każdego zadania bez potrzeby ich samodzielnego rozwiązywania, dzięki czemu od początku ma się dostęp do kompletnych odpowiedzi.
 
-### 🔍 Ukryte motywy
+###  Ukryte motywy
 4 motywy publiczne oraz 7 motywów encrypted. W motywach publicznych ukryte są podpowiedzi do haseł motywów encrypted. Hasło zawsze będzie także nazwą danego motywu, który odblokowujesz.
 
-### 🎨 3 Kolory  
+###  3 Kolory  
 Każdy zeszyt ogranicza się do trzech kolorów:  **Głównego** do pisania, **Dodatkowego** do zaznaczania, podkreślania itp., oraz **Trzeciego** do wyników. 
 Na początku zeszytu znajduje się informacja, który kolor pełni jaką funkcję, aby łatwo można było znaleźć odpowiedzi na zadania.
 
-### 📝 Dodawanie Zadań  
+###  Dodawanie Zadań  
 Wystarczy wypełnić szablon, dodać plik PDF Twojego zeszytu do folderu `Organize` i uruchomić skrypt znajdujący się w tym folderze. Wszystkie motywy zostaną automatycznie zaktualizowane o Twoje rozwiązania.
 
-### 🛠️ Modyfikacja Zeszytów  
+###  Modyfikacja Zeszytów  
 W folderze [startery](./Organize/src/starters/) znajdują się startery zeszytów. Możesz edytować i zastąpić istniejącą stronę własną, tworząc wersję zeszytu z innymi stronami, kolorami lub czcionką.
 
 
-### 🎲 Losowanie Motywów Rozwiązań
+###  Losowanie Motywów Rozwiązań
 Motyw rozwiązania w pliku README jest losowy, przy czym istnieje 92% szans na motyw publiczny oraz **8%** na motyw Encrypted!
 
 
-### 🐛 Zgłaszanie Błędów
+###  Zgłaszanie Błędów
 Błędy w rozwiązaniach lub w skrypcie zgłaszaj na ****Issues**** lub <a href="https://gieras.pl/">****prywatnie****</a>.
 
 
-### 🗿 Najwięksi współtwórcy:
+###  Najwięksi współtwórcy:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://github.com/kamilGie/Rosnotes-Dyskretna/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=kamilGie/Rosnotes-Dyskretna" alt="Najwięksi współtwórcy" />
